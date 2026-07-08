@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数据中心运行监控大屏</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">实时运行态势</p>
+          <h1>数据中心运行监控大屏</h1>
+        </div>
+        <div class="topbar-actions">
+          <div class="control-bar card">
+            <div class="control-group">
+              <label for="locationFilter">机房</label>
+              <select id="locationFilter">
+                <option value="all">全部机房</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <label for="severityFilter">状态</label>
+              <select id="severityFilter">
+                <option value="all">全部状态</option>
+                <option value="normal">正常</option>
+                <option value="warning">告警</option>
+                <option value="critical">严重</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <label>刷新</label>
+              <span id="refreshStatus" class="refresh-status">自动刷新中</span>
+            </div>
+          </div>
+          <div class="clock-card">
+            <span>当前时间</span>
+            <strong id="clock">--</strong>
+          </div>
+        </div>
+      </header>
+
+      <section class="summary-grid">
+        <article class="card metric-card accent-blue">
+          <p>在线主机</p>
+          <h2 id="hostCount">0</h2>
+          <span>健康/告警/严重</span>
+          <div class="subtext" id="statusSummary">0 / 0 / 0</div>
+        </article>
+        <article class="card metric-card accent-green">
+          <p>平均 CPU 使用率</p>
+          <h2 id="avgCpu">0%</h2>
+          <span>峰值主机</span>
+          <div class="subtext" id="peakCpuHost">--</div>
+        </article>
+        <article class="card metric-card accent-yellow">
+          <p>平均内存占用</p>
+          <h2 id="avgMemory">0%</h2>
+          <span>磁盘告警</span>
+          <div class="subtext" id="peakDiskHost">--</div>
+        </article>
+        <article class="card metric-card accent-red">
+          <p>告警事件</p>
+          <h2 id="alertCount">0</h2>
+          <span>重点关注</span>
+          <div class="subtext" id="alertHint">无</div>
+        </article>
+      </section>
+
+      <section class="main-grid">
+        <article class="card wide-card">
+          <div class="card-title-row">
+            <h3>CPU / 内存趋势</h3>
+            <span>最近 16 个采样点</span>
+          </div>
+          <svg id="trendChart" viewBox="0 0 640 260" aria-label="CPU和内存趋势图"></svg>
+        </article>
+
+        <article class="card">
+          <div class="card-title-row">
+            <h3>资源排行</h3>
+            <span>CPU 最高</span>
+          </div>
+          <div id="topHosts" class="rank-list"></div>
+        </article>
+      </section>
+
+      <section class="bottom-grid">
+        <article class="card">
+          <div class="card-title-row">
+            <h3>机房分布</h3>
+            <span>按位置统计</span>
+          </div>
+          <div id="locationBars" class="bar-chart"></div>
+        </article>
+
+        <article class="card">
+          <div class="card-title-row">
+            <h3>运维责任人</h3>
+            <span>按负责人统计</span>
+          </div>
+          <div id="ownerBars" class="bar-chart"></div>
+        </article>
+
+        <article class="card">
+          <div class="card-title-row">
+            <h3>告警清单</h3>
+            <span>磁盘使用率异常</span>
+          </div>
+          <div id="alerts" class="alert-list"></div>
+        </article>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

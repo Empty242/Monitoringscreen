@@ -1,0 +1,343 @@
+{
+  "generatedAt": 1783499080360,
+  "summary": {
+    "hostCount": 20,
+    "healthyHosts": 4,
+    "warningHosts": 6,
+    "criticalHosts": 10,
+    "avgCpu": 39.57,
+    "avgMemory": 15.14,
+    "peakCpuHost": "server-006.hismartlab.cn",
+    "peakDiskHost": "server-019.hismartlab.cn"
+  },
+  "hosts": [
+    {
+      "hostid": "host006",
+      "hostname": "server-006.hismartlab.cn",
+      "owner": "王二",
+      "location": "E机房",
+      "model": "Dell R740",
+      "cpu": 69.57,
+      "memory": 6.94,
+      "load": 27.45,
+      "netIn": 474.84,
+      "netOut": 642.94,
+      "status": "critical"
+    },
+    {
+      "hostid": "host017",
+      "hostname": "server-017.hismartlab.cn",
+      "owner": "赵六",
+      "location": "A机房",
+      "model": "Lenovo SR650",
+      "cpu": 62.72,
+      "memory": 16.08,
+      "load": 24.91,
+      "netIn": 900.93,
+      "netOut": 492.12,
+      "status": "critical"
+    },
+    {
+      "hostid": "host012",
+      "hostname": "server-012.hismartlab.cn",
+      "owner": "刘六",
+      "location": "E机房",
+      "model": "Lenovo SR860",
+      "cpu": 59.65,
+      "memory": 5.14,
+      "load": 20.32,
+      "netIn": 192.64,
+      "netOut": 661.91,
+      "status": "critical"
+    },
+    {
+      "hostid": "host019",
+      "hostname": "server-019.hismartlab.cn",
+      "owner": "吴十",
+      "location": "B机房",
+      "model": "Lenovo SR860",
+      "cpu": 58.85,
+      "memory": 10.83,
+      "load": 23.64,
+      "netIn": 149.57,
+      "netOut": 284.55,
+      "status": "critical"
+    },
+    {
+      "hostid": "host014",
+      "hostname": "server-014.hismartlab.cn",
+      "owner": "李四",
+      "location": "A机房",
+      "model": "Huawei 2288H",
+      "cpu": 57.12,
+      "memory": 17.36,
+      "load": 22.61,
+      "netIn": 83.9,
+      "netOut": 987.51,
+      "status": "critical"
+    },
+    {
+      "hostid": "host002",
+      "hostname": "server-002.hismartlab.cn",
+      "owner": "钱七",
+      "location": "B机房",
+      "model": "HP DL388",
+      "cpu": 55.85,
+      "memory": 2.34,
+      "load": 12.38,
+      "netIn": 362.92,
+      "netOut": 914.18,
+      "status": "warning"
+    },
+    {
+      "hostid": "host008",
+      "hostname": "server-008.hismartlab.cn",
+      "owner": "王二",
+      "location": "A机房",
+      "model": "Lenovo SR650",
+      "cpu": 49.19,
+      "memory": 18.11,
+      "load": 8.89,
+      "netIn": 347.23,
+      "netOut": 557.46,
+      "status": "normal"
+    },
+    {
+      "hostid": "host007",
+      "hostname": "server-007.hismartlab.cn",
+      "owner": "林四",
+      "location": "B机房",
+      "model": "Huawei 2288H",
+      "cpu": 44.85,
+      "memory": 2.72,
+      "load": 14.75,
+      "netIn": 467.76,
+      "netOut": 478.65,
+      "status": "warning"
+    }
+  ],
+  "cpuTrend": [
+    {
+      "label": "1",
+      "cpu": 45.3,
+      "memory": 64.89,
+      "load": 15.59
+    },
+    {
+      "label": "2",
+      "cpu": 41.57,
+      "memory": 74.41,
+      "load": 13.55
+    },
+    {
+      "label": "3",
+      "cpu": 36.74,
+      "memory": 69.87,
+      "load": 16.12
+    },
+    {
+      "label": "4",
+      "cpu": 45.8,
+      "memory": 65.43,
+      "load": 14.12
+    },
+    {
+      "label": "5",
+      "cpu": 39.76,
+      "memory": 80.44,
+      "load": 14.79
+    },
+    {
+      "label": "6",
+      "cpu": 46.8,
+      "memory": 55.31,
+      "load": 18.98
+    },
+    {
+      "label": "7",
+      "cpu": 40.77,
+      "memory": 80.65,
+      "load": 15.17
+    },
+    {
+      "label": "8",
+      "cpu": 43.56,
+      "memory": 72.03,
+      "load": 16.33
+    },
+    {
+      "label": "9",
+      "cpu": 55.03,
+      "memory": 65.36,
+      "load": 14.36
+    },
+    {
+      "label": "10",
+      "cpu": 37.07,
+      "memory": 67.63,
+      "load": 17.79
+    },
+    {
+      "label": "11",
+      "cpu": 44.53,
+      "memory": 85.4,
+      "load": 15.98
+    },
+    {
+      "label": "12",
+      "cpu": 45.73,
+      "memory": 53.06,
+      "load": 14.26
+    },
+    {
+      "label": "13",
+      "cpu": 47.95,
+      "memory": 91.74,
+      "load": 19.83
+    },
+    {
+      "label": "14",
+      "cpu": 47.6,
+      "memory": 59.42,
+      "load": 17.25
+    },
+    {
+      "label": "15",
+      "cpu": 46.79,
+      "memory": 69.53,
+      "load": 17.52
+    },
+    {
+      "label": "16",
+      "cpu": 39.57,
+      "memory": 52.46,
+      "load": 17.73
+    }
+  ],
+  "locationStats": [
+    {
+      "name": "A机房",
+      "value": 7
+    },
+    {
+      "name": "B机房",
+      "value": 4
+    },
+    {
+      "name": "C机房",
+      "value": 3
+    },
+    {
+      "name": "D机房",
+      "value": 2
+    },
+    {
+      "name": "E机房",
+      "value": 4
+    }
+  ],
+  "ownerStats": [
+    {
+      "name": "刘六",
+      "value": 2
+    },
+    {
+      "name": "吴十",
+      "value": 1
+    },
+    {
+      "name": "孙八",
+      "value": 1
+    },
+    {
+      "name": "李四",
+      "value": 3
+    },
+    {
+      "name": "林四",
+      "value": 4
+    },
+    {
+      "name": "王二",
+      "value": 3
+    },
+    {
+      "name": "王五",
+      "value": 1
+    },
+    {
+      "name": "赵六",
+      "value": 1
+    },
+    {
+      "name": "钱七",
+      "value": 2
+    },
+    {
+      "name": "陈三",
+      "value": 1
+    },
+    {
+      "name": "黄五",
+      "value": 1
+    }
+  ],
+  "alerts": [
+    {
+      "hostid": "host019",
+      "hostname": "server-019.hismartlab.cn",
+      "location": "B机房",
+      "util": 99.81,
+      "severity": "critical"
+    },
+    {
+      "hostid": "host004",
+      "hostname": "server-004.hismartlab.cn",
+      "location": "A机房",
+      "util": 99.79,
+      "severity": "critical"
+    },
+    {
+      "hostid": "host012",
+      "hostname": "server-012.hismartlab.cn",
+      "location": "E机房",
+      "util": 99.66,
+      "severity": "critical"
+    },
+    {
+      "hostid": "host010",
+      "hostname": "server-010.hismartlab.cn",
+      "location": "C机房",
+      "util": 99.51,
+      "severity": "critical"
+    },
+    {
+      "hostid": "host006",
+      "hostname": "server-006.hismartlab.cn",
+      "location": "E机房",
+      "util": 99.49,
+      "severity": "critical"
+    },
+    {
+      "hostid": "host016",
+      "hostname": "server-016.hismartlab.cn",
+      "location": "A机房",
+      "util": 99.24,
+      "severity": "critical"
+    },
+    {
+      "hostid": "host007",
+      "hostname": "server-007.hismartlab.cn",
+      "location": "B机房",
+      "util": 99.22,
+      "severity": "critical"
+    },
+    {
+      "hostid": "host001",
+      "hostname": "server-001.hismartlab.cn",
+      "location": "A机房",
+      "util": 99.22,
+      "severity": "critical"
+    }
+  ]
+}
